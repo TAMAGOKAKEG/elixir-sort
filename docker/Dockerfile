@@ -1,7 +1,7 @@
-FROM elixir:latest
+FROM elixir:1.14
 
 ENV NODE_VERSION 19
-ENV PHOENIX_VERSION 1.6.15
+ENV PHOENIX_VERSION 1.7.1
 
 RUN apt-get update \
   && curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash \
