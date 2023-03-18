@@ -17,7 +17,8 @@ defmodule PhoenixMysqlWeb.Router do
   scope "/", PhoenixMysqlWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    # get "/", PageController, :index
+    get "/", TopController, :index
   end
 
   # Other scopes may use custom stacks.
